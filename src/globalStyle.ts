@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import backgroundImage from "./assets/background-light.png";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -8,8 +9,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background: url(${backgroundImage}) no-repeat top center/cover;
     font-family: Inter, sans-serif;
     font-weight: 400;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
 `;
