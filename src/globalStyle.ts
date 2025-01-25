@@ -10,9 +10,11 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: url(${backgroundImage}) no-repeat top center/cover;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
     line-height: 1.5;
+  }
+
+  span, a {
+    font-family: Inter, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 `;
