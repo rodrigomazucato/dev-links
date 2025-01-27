@@ -11,6 +11,6 @@ export const LinkContainer = styled.a`
   padding: 1rem 1.5rem;
 
   &:hover {
-    border: 1px solid ${(props) => props.theme.text};
+    border: 1.5px solid ${(props) => props.theme.text};
   }
 `;

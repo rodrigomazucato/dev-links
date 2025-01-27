@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import backgroundImage from "./assets/background-light.png";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -9,8 +8,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: url(${backgroundImage}) no-repeat top center/cover;
+    background: ${(props) =>
+      props.theme.backgroundImage} no-repeat top center/cover;
     line-height: 1.5;
+    transition: background 0.2s ease;
   }
 
   span, a {
