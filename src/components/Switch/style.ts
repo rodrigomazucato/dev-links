@@ -5,7 +5,13 @@ export const SwitchContainer = styled.button`
   border: none;
   background-color: transparent;
   background-image: ${(props) => props.theme.switchImage};
-  width: 4rem;
-  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 5rem;
+  height: 4rem;
   margin: auto;
+
+  &:hover {
+    background-image: ${(props) => props.theme.switchHover};
+  }
 `;
