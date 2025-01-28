@@ -8,10 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) =>
-      props.theme.backgroundImage} no-repeat top center/cover;
-    line-height: 1.5;
-    transition: background 0.3s ease;
+    background: ${(props) => props.theme.backgroundImage}
+      no-repeat top center/cover;
+    transition: all 0.3s ease;
   }
 
   span, a {
