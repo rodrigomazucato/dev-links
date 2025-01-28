@@ -7,9 +7,12 @@ export const ProfileContainer = styled.div`
   gap: 0.75rem;
 
   img {
-    height: 7rem;
     width: 7rem;
     border-radius: 50%;
     border: 2px solid ${(props) => props.theme.stroke};
+
+    @media (max-width: 768px) {
+      width: 5.5rem;
+    }
   }
 `;

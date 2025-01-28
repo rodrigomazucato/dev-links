@@ -18,4 +18,16 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.text};
     -webkit-font-smoothing: antialiased;
   }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.875rem;
+      img {
+      height: 87.5%;
+      width: 87.5%;
+    }
+    }
+
+   
+  }
 `;
